@@ -37,8 +37,8 @@ export default function Search() {
     }, [term])
     return (
         <section id='searchSection' className='self-end relative p-1 bg-gradient-to-b from-slate-100 to-bg-slate-500
-        border border-slate-400 rounded z-10'>
-            <input type='text' value={term} placeholder='Find a contact, minimum 3 letters' onChange={onChangeHandler} className='text-lg' />
+        border border-slate-400 rounded z-10 w-full md:w-auto mt-4 md:m-0'>
+            <input type='text' value={term} placeholder='Find a contact, minimum 3 letters' onChange={onChangeHandler} className='text-lg w-full' />
             {
                 term?.length > minSearchTermLength && <ul className='absolute border rounded border-slate-400 bg-slate-50 right-0 left-0 w-full top-full p-1 text-lg'>
                     {

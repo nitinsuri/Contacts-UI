@@ -13,7 +13,7 @@ export default async function Contacts() {
     }
     const contacts = await getAllUsers()
     return (
-        <main className="flex flex-col items-center p-16  w-full">
+        <main className="flex  min-h-screen flex-col items-center p-8 md:p-24 w-full">
             <InnerHeader pageType={'landing'} />
             <ul role="list" className="grid gap-4 text-left w-full sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
                 {

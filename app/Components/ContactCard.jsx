@@ -11,7 +11,7 @@ export default function ContactCard({ contact, view }) {
                 className={`bg-gradient-to-b from-slate-100 to-bg-slate-500
                 border border-slate-400 rounded
                 flex items-center
-                ${listView ? 'gap-x-3 transition-transform hover:scale-105 p-2 w-full' : 'flex-col sm:w-full md:w-3/4 lg:w-1/2 p-8'} `}>
+                ${listView ? 'gap-x-3 transition-transform hover:scale-105 p-2 w-full' : 'flex-col w-full md:w-3/4 lg:w-1/2 p-8'} `}>
                 <Image
                     src={avatarImage}
                     alt={'Avatar image of ' + fullName}

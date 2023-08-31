@@ -14,7 +14,7 @@ export default async function Contacts({ params }) {
     }
     const contact = await getUserById()
     return (
-        <main className="flex min-h-screen flex-col items-center p-16">
+        <main className="flex min-h-screen flex-col items-center p-8 md:p-24 w-full">
             <InnerHeader pageType={'details'} />
             <ContactCard contact={contact} view={'single'} />
         </main>
