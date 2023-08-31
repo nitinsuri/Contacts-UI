@@ -29,13 +29,7 @@ Create a React application that allows users to search and view contact details 
 
 This app has an external dependency on `json-server` module which is already added to the devDependencies.
 
-Also, `concurrently` module has been added to run the `json-server` and the **Contact Lookup** UI together.
-
 First, run the `npm i` in the parent folder. This will install external dependecies.
-Second, run the development server:
-```bash
-npm run develop
-```
-This fires `concurrently`.
+Second, run the build: `npm run buildwithdb`, exit the process and then run `npm run develop`. This fires `concurrently`. which run the `json-server` and the **Contact Lookup** UI together.
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the Contact UI.
